@@ -3,6 +3,8 @@ This Text to Image app is a GUI-based tool built with Tkinter and customtkinter.
 
 This text-to-image generation app is an excellent demonstration of combining advanced machine learning models with a user-friendly interface, making cutting-edge AI accessible to a broader audience.
 
+<img width="295" alt="image" src="https://github.com/user-attachments/assets/e69ec430-4342-4b11-92a8-77fa63e14596">
+
 ![image](https://github.com/user-attachments/assets/aca0750e-108f-42e6-948b-9b7923723348)
 
 
