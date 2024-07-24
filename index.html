@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 15px;
+            color: white;
+            background-color: black;
+            border: 2px solid white;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            color: black;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 80%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text to Image Generator</h1>
+        <form method="POST">
+            <input type="text" name="prompt" placeholder="Enter text to generate image" required>
+            <button type="submit">Generate</button>
+        </form>
+        {% if img_data %}
+        <img src="data:image/png;base64,{{ img_data }}" alt="Generated Image">
+        {% endif %}
+    </div>
+</body>
+
+</html>
